@@ -7,4 +7,4 @@ Theme for firefox using css userChrome.css feature.
 
 ## Installation
 
-Go to `about:support` in firefox, cpen Profile Directory, create a new folder names `chrome` and paste the userChrome.css file into it.
+Go to `about:support` in firefox, open profile directory, create a new folder names `chrome` and paste the userChrome.css file into it.
