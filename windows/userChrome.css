@@ -1,0 +1,350 @@
+::-moz-selection {background-color: rgba(255, 99, 71, 0.8) !important;}
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Adjust Colors */
+.tab-background:not([selected=true]),
+.tab-background[selected="true"],
+#titlebar-buttonbox,
+#TabsToolbar,
+#PersonalToolbar,
+#urlbar,
+#nav-bar,
+#main-window {
+  background: #282828 !important;
+}
+
+/* Font colour */
+.tab-content{
+    color: #eeeef2 !important;
+}
+
+/*  menu */
+menupopup, popup,
+popup > menu > menupopup,
+menupopup > menu > menupopup, 
+#context-navigation {
+	-moz-appearance: none !important;
+	background: #282828 !important;
+	border: none !important;
+	padding: 2px 0px 2px 0px  !important;
+}
+
+menupopup menuseparator {
+	-moz-appearance: none !important;
+	background: #323232 !important;
+	margin: 2px 0px 2px 0px !important;
+	padding: 0 !important;
+	border-top: none !important;
+	border-color: transparent !important;
+}
+
+menupopup menu, menuitem{
+	-moz-appearance: none !important;
+	color: #eeeef2 !important;
+	font-family: monospace !important;
+}
+
+menupopup menu:hover, menuitem:hover, context-navigation > menuitem:hover {
+	-moz-appearance: none !important;
+	color: #eeeef2 !important;
+	background-color: rgba(255, 99, 71, 0.8) !important;
+} 
+
+/*** Button restyle ***/ 
+#back-button {
+    list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfiAxMSNzVLQoGBAAAAb0lEQVQoz43ROQqDUBSF4UMEESKCBBehOODK7ezSWZnGJmuI4xp+66CX9077FXc40k1o+fCSFRoOOgKLa3Z6QosrNt5EFpesDDwtLlgYSSzOmZlILY758SW7ykO+cYzwWNLjTI9HSc5XS86ypP+6Tw/fVEqhFbEZAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTAzLTE5VDE4OjU1OjUzKzAxOjAwq3ccegAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wMy0xOVQxODo1NTo1MyswMTowMNoqpMYAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC') !important;      
+}
+#forward-button {
+    list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfiAxMSOA3k2CXQAAAAbklEQVQoz5WRMQqDABAEF4UgKEIIPkKJii+3s7NLpY1N3qBR84axsPYOt1sYuNtdSZLEi5FG1yKk5U9tIQ86dioLiejZKC0k5sPK20JSBn4UFvJkYiG3kIwvM8npAt2Vc8J50onpFOVU7Y51PfcBtUFUSir+geUAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDMtMTlUMTg6NTY6MTMrMDE6MDDECqmDAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTAzLTE5VDE4OjU2OjEzKzAxOjAwtVcRPwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII=') !important;
+}
+
+/** Tab overflow arrow buttons **/
+#tabbrowser-tabs[overflow] .scrollbutton-up > *,
+#tabbrowser-tabs[overflow] .scrollbutton-down > *{ 
+  fill: #eeeef2 !important; 
+}
+
+#tabbrowser-tabs[overflow] .scrollbutton-up:hover,
+#tabbrowser-tabs[overflow] .scrollbutton-down:hover { 
+  background-color: rgba(20, 20, 20, 0.3) !important;
+  border-radius: 4px !important;
+}
+
+/* remove shadow */
+.tabbrowser-arrowscrollbox > .arrowscrollbox-overflow-start-indicator,
+.tabbrowser-arrowscrollbox > .arrowscrollbox-overflow-end-indicator {
+  opacity: 0 !important;
+}
+
+/* Remove bottom border of top panel */
+#navigator-toolbox {
+border-bottom: 0px !important;
+}
+
+/* toolbar buttons */
+.toolbarbutton-1 {
+  --lwt-toolbarbutton-icon-fill: #eeeef2 !important; 
+  --toolbarbutton-hover-background: rgba(20, 20, 20, 0.3) !important;
+  --toolbarbutton-active-background: rgba(20, 20, 20, 0.3) !important;
+}
+
+/* selected option colour */
+.autocomplete-richlistitem[selected],
+.View-row[selected] {
+  background-color: #333333 !important;
+}
+
+/* find bar (ctrl + f) */
+.findbar-container {
+  background: #282828 !important;
+  color: #eeeef2 !important;
+  border-color: 0 !important;
+}
+
+.findbar-closebutton {
+  background-color: #282828 !important;
+  color: #eeeef2 !important;
+}
+
+.findbar-find-previous,
+.findbar-find-next{
+  background-color: #282828 !important;
+  border-color: #1c1c1c !important;
+}
+
+.findbar-find-previous:hover,
+.findbar-find-next:hover {
+  cursor: pointer;
+}
+
+.findbar-textbox {
+  background-color: #282828 !important;
+  border-color: #1c1c1c !important;
+}
+
+#PopupAutoCompleteRichResult {
+    margin-left: 0px !important;
+}
+
+
+/* nav bar height */
+#nav-bar {
+  min-height: 40px !important;
+  z-index: 3;
+  padding-top: 2px !important;
+}
+
+/** url bar **/
+#urlbar {
+  margin-left: 85px !important;
+  border: none !important;
+  box-shadow: none !important;
+  min-height: 30px !important;
+  background-color: #282828 !important;
+  text-align: center;
+}
+
+#urlbar-results>.urlbarView-body-outer>.urlbarView-body-inner>#urlbarView-results>.urlbarView-row>.urlbarView-row-inner>.urlbarView-title * {
+  font: -moz-info !important;
+}
+
+/* Drop down results url bar */
+#urlbar-results, .urlbarView {
+  background-color: #282828 !important;
+  /*border-block-width: 0 !important;*/
+  color: #eeeef2 !important;
+  border: none !important;
+}
+
+.urlbarView-secondary, .urlbarView-title-separator {
+  display: none;
+}
+
+/* remove url bar extras (bookmark button etc..) */
+.urlbar-icon,
+.tab-close-button.tab-close-button,
+#page-action-buttons,
+#tracking-protection-icon-container,
+#identity-box {
+  display: none;
+}
+
+/* Center url bar */
+#urlbar #urlbar-input {
+	text-align: center !important;
+	color: #eeeef2;
+}
+
+/** bookmarks **/
+
+/* Color of bookmarks text */
+.bookmark-item[container] {
+  color: #eeeef2 !important;
+}
+
+/* Color of bookmarks icon */
+.bookmark-item { 
+  fill: #eeeef2 !important;
+}
+
+/* Global (default) */
+.bookmark-item:not([container]){ 
+  fill: #eeeef2 !important;
+}
+
+/* Icon */
+.menu-iconic-text {
+  color: white !important;
+}
+
+#PanelUI-menu-button {
+  margin-left: 3px !important;
+}
+
+/* Hover on children color */
+.bookmark-item:not([container]):hover {
+  background-color: rgba(255, 99, 71, 0.8) !important;
+}
+
+
+/** hamburger menu **/
+
+/* remove arrow at the top of menu */
+.panel-arrowbox {
+  display: none;
+}
+
+/* border */
+.panel-arrowcontent {
+  border-color: #282828 !important;
+}
+
+.panel-subview-body {
+	color: #eeeef2 !important;
+	background: #282828 !important;
+	border-color: #eeeef2 !important;
+  border-width: 0 !important;
+}
+
+.subviewbutton:hover {
+  background-color: rgba(255, 99, 71, 0.8) !important;
+}
+
+/* zoom % */
+#appMenu-zoomReset-button {
+	color: #cccccc !important;
+  border-width: 0 !important;
+	background-color: #282828 !important;
+}
+
+.subviewbutton.panel-subview-footer {
+	background-color: #282828 !important;
+	border-top: 0px solid !important;
+}
+
+.panel-header {
+	border-bottom: 1px solid #1f1f1f !important;
+	background: #282828 !important;
+}
+
+.panel-subview-footer,
+[class^="PanelUI-"] {
+	color: #eeeef2 !important;
+	background: #282828 !important;
+}
+
+.subviewbutton,
+.subview-subheader {
+  color: #eeeef2 !important;
+}
+
+
+/* Separator */
+:root {
+	--panel-separator-color: #323232 !important;
+}
+
+.subviewbutton[shortcut]::after {
+	font-family: monospace !important;
+	color: #cccccc !important;
+}
+
+.subviewbutton-nav::after {
+	fill: #cccccc !important;
+}
+
+/* Font */
+#appMenu-popup .subviewbutton .toolbarbutton-text,
+#appMenu-popup .panel-arrowcontent,
+panelmultiview .toolbaritem-combined-buttons>label {
+	font-family: monospace !important;
+	font-size: 14px !important;
+}
+
+/** tab design **/
+  
+/* Remove Tab Borders */
+.tabbrowser-tab::after, .tabbrowser-tab::before {
+   border-left: none !important;
+}
+:root {
+  --tabs-border: transparent !important;
+}
+
+/* Tab Line At Bottom */
+.tab-line {
+    -moz-box-ordinal-group: 2;
+    min-height: 2px;
+    background-color: tomato !important;
+}
+
+/* Set title bar (tabs) below navbar */
+#titlebar{
+  -moz-box-ordinal-group: 2;
+  -moz-appearance: none !important;
+}
+
+/* Remove padding at the end of tabs bar */
+.titlebar-placeholder, 
+#TabsToolbar .titlebar-spacer{ 
+  display: none; 
+}
+
+
+/** active window buttons (close, min, max) **/
+/* Move into nav bar */
+.titlebar-buttonbox-container {
+	position: fixed !important;
+	background-color: #282828 !important;
+	top: 14px;
+	right: 0;
+}
+
+/*-min max close */
+.titlebar-button>.toolbarbutton-icon {
+  /* change numbers at your needs - size of buttons */
+	height: 12px !important;
+	min-height: 12px !important;
+	width: 12px !important;
+	min-width: 12px !important;
+}
+
+.titlebar-button {
+	padding-left: 9px !important;
+	padding-right: 9px !important;
+	padding-top: 8px !important; 
+}
+
+/* move to right top */
+#nav-bar {
+  margin-right: 85px;
+  margin-top: 5px;
+  box-shadow: none !important;
+}
+
+/** misc **/
+
+/* Remove white flash when opening new tab */
+#tabbrowser-tabpanels{
+  background-color: #282828 !important;
+}
